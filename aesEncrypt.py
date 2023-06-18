@@ -26,8 +26,6 @@ def AESEncrypt(plaintext, key):
     return ciphertext,key
 
 my_secret_key = urandom(16)
-ip, port = "listening ip", "listening port"
-
 plaintext = "cmd.exe"
 ciphertext, key = AESEncrypt(plaintext, my_secret_key)
 
